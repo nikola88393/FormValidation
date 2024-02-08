@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+form {
+    border: 1px solid red;
+    padding: 25px;
+    display:flex;
+    flex-direction: column;
+    position: relative;
+}
+
+input,
+select {
+    margin-bottom: 20px;
+    width: 250px;
+    height: 30px;
+}
+
+button {
+    width: 250px;
+    height: 30px;
+}
+
+.error {
+    color: red;
+    position: absolute;
+    font-size: 0.8rem;
+}
+
+.emailError {
+    top: 80px;
+}
+.zipError{
+    top: 210px;
+}
+.passError {
+    top: 350px
+}

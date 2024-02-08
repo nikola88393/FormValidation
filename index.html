@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Form Validation</title>
+  </head>
+  <body>
+    <form novalidate>
+      <label for="email">Email:</label>
+      <input type="email" id="email" required />
+      <span class="emailError error"></span>
+
+      <label for="country">Country</label>
+      <select name="country" id="country">
+        <!-- 4 digits -->
+        <option value="af">Afghanistan</option>
+        <!-- 6 digits -->
+        <option value="by">Belarus</option>
+        <!-- 5 digits -->
+        <option value="ba">Bosnia and Herzegovina</option>
+      </select>
+
+      <label for="zip">ZIP:</label>
+      <input type="number" id="zip" required />
+      <span class="zipError error"></span>
+
+      <label for="pass">Password:</label>
+      <input type="password" id="pass" required />
+
+      <label for="confPass">Confirm Password:</label>
+      <input type="password" id="confPass" required />
+
+      <span class="passError error"></span>
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
